@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — Blue-WMS</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1d21;
+    --muted: #5b6470;
+    --rule: #e3e8ee;
+    --accent: #1f6feb;
+    --note-bg: #f5f8fc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171a;
+      --fg: #e6e9ed;
+      --muted: #9aa4b0;
+      --rule: #2a2f36;
+      --accent: #6ea8ff;
+      --note-bg: #1c2128;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .35rem; }
+  h2 {
+    font-size: 1.15rem; margin: 2.5rem 0 .75rem;
+    padding-top: 1.25rem; border-top: 1px solid var(--rule);
+  }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .4rem; }
+  .sub { color: var(--muted); margin: 0 0 2rem; font-size: .95rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  a { color: var(--accent); }
+  .note {
+    background: var(--note-bg); border: 1px solid var(--rule);
+    border-radius: 8px; padding: 1rem 1.15rem; margin: 1.25rem 0;
+  }
+  .note p:first-child { margin-top: 0; }
+  .note p:last-child { margin-bottom: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 600; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
+  .tbl-wrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Política de Privacidade — Blue-WMS</h1>
+<p class="sub">Última atualização: 6 de novembro de 2026</p>
+
+<p>Esta política descreve como o aplicativo <strong>Blue-WMS</strong> trata dados pessoais. O aplicativo é uma ferramenta corporativa de uso restrito, distribuída a empresas contratantes do sistema de gestão Blue para que suas equipes de depósito separem pedidos de venda, lendo com a câmera as etiquetas dos locais e os códigos de barras dos produtos.</p>
+
+<h2>1. Quem trata os dados</h2>
+
+<p>O Blue-WMS é desenvolvido e mantido por <strong>BLUE CONNECT DESENVOLVIMENTO DE SISTEMAS LTDA, CNPJ 35.313.074/0001-62</strong> ("ASC Blue").</p>
+
+<p>Para os fins da Lei Geral de Proteção de Dados (Lei 13.709/2018):</p>
+
+<ul>
+  <li>A <strong>empresa contratante</strong> que disponibiliza o aplicativo aos seus colaboradores atua como <strong>controladora</strong> dos dados. É ela quem define quais dados são coletados e para quê.</li>
+  <li>A <strong>ASC Blue</strong> atua como <strong>operadora</strong>, tratando os dados conforme instrução da contratante.</li>
+</ul>
+
+<p>Pedidos relativos a dados pessoais devem ser dirigidos primeiro à empresa contratante, que é a controladora.</p>
+
+<h2>2. Dados coletados</h2>
+
+<div class="tbl-wrap">
+<table>
+  <thead>
+    <tr><th>Categoria</th><th>Dados</th><th>Quando</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Configuração</td>
+      <td>CNPJ da empresa contratante e código de acesso; nome do dispositivo</td>
+      <td>Na configuração inicial</td>
+    </tr>
+    <tr>
+      <td>Conta e acesso</td>
+      <td>Nome de usuário e senha; identificação do usuário, da empresa e da filial</td>
+      <td>No login</td>
+    </tr>
+    <tr>
+      <td>Dados dos pedidos</td>
+      <td>Número do pedido; razão social, nome fantasia e município do cliente; transportadora, canal de venda e observação interna; produtos, embalagens, quantidades e locais do depósito</td>
+      <td>Recebidos do servidor da contratante ao abrir um pedido</td>
+    </tr>
+    <tr>
+      <td>Separação</td>
+      <td>Cada leitura confirmada (produto, embalagem, local e quantidade), faltas registradas e correções, com data, hora, usuário e dispositivo</td>
+      <td>Quando o separador confirma uma leitura, registra uma falta, pausa ou finaliza um pedido</td>
+    </tr>
+    <tr>
+      <td>Registros técnicos</td>
+      <td>Log de eventos e erros do aplicativo, que pode incluir dados de configuração e de acesso</td>
+      <td>Durante o uso; permanece no aparelho</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3>Dados de terceiros</h3>
+<p>Os pedidos trazem a identificação de <strong>clientes da empresa contratante</strong>, que não são usuários do aplicativo: razão social, nome fantasia e município. Esses dados são fornecidos pela própria contratante, a partir do seu sistema de gestão, e exibidos apenas para que o separador identifique o pedido.</p>
+
+<h3>Câmera</h3>
+<p>A câmera é usada exclusivamente para ler códigos de barras. As imagens são processadas no próprio aparelho, no momento da leitura: o aplicativo não grava fotos nem vídeos e não envia imagens a nenhum servidor. Apenas o código lido é usado.</p>
+
+<h3>O que o aplicativo não faz</h3>
+<ul>
+  <li>Não acessa localização, microfone, contatos, fotos ou arquivos do aparelho.</li>
+  <li>Não coleta agenda, mensagens ou histórico de navegação.</li>
+  <li>Não usa dados para publicidade, não usa o identificador de publicidade e não vende dados.</li>
+  <li>Não utiliza ferramentas de análise comportamental ou rastreamento publicitário.</li>
+  <li>Não permite criar conta: o acesso é cadastrado pela empresa contratante no sistema Blue.</li>
+</ul>
+
+<h2>3. Permissões do Android</h2>
+
+<div class="tbl-wrap">
+<table>
+  <thead><tr><th>Permissão</th><th>Finalidade</th></tr></thead>
+  <tbody>
+    <tr><td>Internet</td><td>Receber os pedidos e enviar a separação ao servidor da empresa contratante.</td></tr>
+    <tr><td>Câmera</td><td>Ler as etiquetas dos locais e os códigos de barras dos produtos. Sem ela, a separação não fica disponível.</td></tr>
+    <tr><td>Vibração</td><td>Confirmar ao separador que um código foi lido.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>O aplicativo não solicita outras permissões. O compartilhamento do registro técnico usa o menu de compartilhamento do Android e só acontece quando o próprio usuário o aciona; o destino é escolhido por ele.</p>
+
+<h2>4. Finalidade e base legal</h2>
+
+<p>Os dados são tratados para permitir a separação de pedidos pela equipe de depósito, o registro do que foi separado e por quem, e o envio dessas informações ao sistema da empresa contratante. As bases legais aplicáveis são a <strong>execução de contrato</strong> e o <strong>legítimo interesse</strong> da contratante na gestão de sua operação logística, nos termos do art. 7º da LGPD.</p>
+
+<h2>5. Compartilhamento e armazenamento</h2>
+
+<p>Os dados coletados são transmitidos ao <strong>servidor da própria empresa contratante</strong>. A ASC Blue não compartilha esses dados com terceiros, exceto quando exigido por autoridade competente ou por determinação legal.</p>
+
+<p>O aplicativo guarda no aparelho apenas a configuração e o perfil de acesso. Os pedidos e o andamento da separação ficam no servidor da contratante e não são armazenados no dispositivo. Os dados locais podem ser eliminados desinstalando o aplicativo ou limpando seus dados nas configurações do Android. Refazer a configuração do aplicativo também apaga a configuração e o perfil guardados.</p>
+
+<p>O prazo de retenção no servidor é definido pela empresa contratante, na condição de controladora.</p>
+
+<h2>6. Segurança</h2>
+
+<p>O acesso ao aplicativo exige autenticação e é limitado aos colaboradores autorizados pela empresa contratante. Cada dispositivo é identificado individualmente. A senha é cifrada pelo aplicativo antes do envio, e o código de sessão fica no armazenamento seguro do Android.</p>
+
+<div class="note">
+  <p><strong>Transmissão de dados.</strong> A comunicação entre o aplicativo e o servidor da empresa contratante ocorre por HTTP. O canal de transporte é definido pela infraestrutura da contratante, e a proteção da rede utilizada é responsabilidade dela.</p>
+</div>
+
+<h2>7. Direitos do titular</h2>
+
+<p>A LGPD assegura ao titular os direitos de confirmação de tratamento, acesso, correção, anonimização, portabilidade, informação sobre compartilhamento e revogação de consentimento.</p>
+
+<p>Como a empresa contratante é a controladora, os pedidos devem ser dirigidos a ela. A ASC Blue prestará o apoio técnico necessário para atendê-los.</p>
+
+<h2>8. Menores de idade</h2>
+
+<p>O aplicativo destina-se exclusivamente ao uso profissional por colaboradores das empresas contratantes e não é dirigido a menores de 18 anos.</p>
+
+<h2>9. Alterações desta política</h2>
+
+<p>Alterações serão publicadas nesta página, com atualização da data no topo. Mudanças relevantes serão comunicadas às empresas contratantes.</p>
+
+<h2>10. Contato</h2>
+
+<p>Dúvidas sobre esta política: <a href="mailto:asc@ascblue.com.br">asc@ascblue.com.br</a></p>
+
+<footer>
+  Blue-WMS — ASC Blue<br>
+  Aplicativo corporativo de uso restrito.
+</footer>
+
+</main>
+</body>
+</html>
